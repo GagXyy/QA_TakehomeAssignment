@@ -1,0 +1,120 @@
+# OrangeHRM UI Automation Framework (Cucumber)
+
+## Project Overview
+
+This project automates the Login module of the OrangeHRM Demo application using Selenium WebDriver, Java, Cucumber, TestNG, Maven, and the Page Object Model (POM).
+
+The framework follows the Behavior Driven Development (BDD) approach using Gherkin feature files and reusable step definitions.
+
+---
+
+## Tech Stack
+
+* Java 18
+* Selenium WebDriver
+* Cucumber
+* TestNG
+* Maven
+* Page Object Model (POM)
+* PageFactory
+* WebDriverManager
+
+---
+
+
+---
+
+## Automated Test Scenarios
+
+### Scenario 1 – Verify login with valid username and password
+
+**Expected Result**
+
+* User should be successfully logged in.
+* Dashboard page should be displayed.
+
+---
+
+### Scenario 2 – Verify user can log out successfully
+
+**Expected Result**
+
+* User should be successfully logged out.
+* Login page should be displayed.
+
+---
+
+### Scenario 3 – Verify login with invalid username
+
+**Expected Result**
+
+* Invalid credentials message should be displayed.
+
+---
+
+## Framework Design
+
+The framework follows the **Page Object Model (POM)** and **Behavior Driven Development (BDD)** principles.
+
+### Components
+
+* **BaseClass** – Browser setup and teardown.
+* **ConfigReader** – Reads configuration values from the properties file.
+* **LoginPage** – Contains login-related actions.
+* **DashboardPage** – Contains dashboard and logout actions.
+* **Hooks** – Executes browser setup before each scenario and closes the browser after execution.
+* **Step Definitions** – Maps Gherkin steps to Java methods.
+* **Feature Files** – Defines test scenarios using Gherkin syntax.
+* **TestRunner** – Executes Cucumber scenarios using TestNG.
+
+---
+
+
+## Running the Tests
+
+### Using Eclipse
+
+* Right-click `TestRunner.java`
+* Select **Run As → TestNG Test**
+
+### Using Maven
+
+```bash
+mvn clean test
+```
+
+---
+
+## Reports
+
+After execution, Cucumber generates reports in the `target` folder.
+
+Example:
+
+```text
+target/
+    cucumber-report.html
+```
+
+---
+
+## Features
+
+* Selenium WebDriver
+* Cucumber BDD
+* TestNG Runner
+* Maven Build Tool
+* Page Object Model (POM)
+* PageFactory
+* Hooks
+* Gherkin Feature Files
+* Step Definitions
+* External Configuration using Properties File
+* WebDriverManager
+* HTML Test Reports
+
+---
+
+## Author
+
+**Gagan AC**
